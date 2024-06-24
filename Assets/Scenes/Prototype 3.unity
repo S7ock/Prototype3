@@ -281,29 +281,13 @@ PrefabInstance:
       addedObject: {fileID: 288139448}
     - targetCorrespondingSourceObject: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 288139447}
+      addedObject: {fileID: 288139452}
   m_SourcePrefab: {fileID: 100100000, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
 --- !u!1 &288139446 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
   m_PrefabInstance: {fileID: 288139445}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &288139447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288139446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77abf9b221127194da3799a098c3e646, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 700
-  gravityModifier: 1
-  isOnGround: 1
-  gameOver: 0
 --- !u!65 &288139448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -352,6 +336,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &288139452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288139446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77abf9b221127194da3799a098c3e646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionParticle: {fileID: 0}
+  dirtParticle: {fileID: 0}
+  JumoSound: {fileID: 0}
+  crashSound: {fileID: 0}
+  jumpForce: 10
+  gravityModifier: 1.5
+  isOnGround: 1
+  gameOver: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,10 +740,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 385354103203581438, guid: b6adf97e2db180a49b2f642b09d36be7, type: 3}
       propertyPath: m_Name
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 385354103203581438, guid: b6adf97e2db180a49b2f642b09d36be7, type: 3}
-      propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2418555177549707280, guid: b6adf97e2db180a49b2f642b09d36be7, type: 3}
